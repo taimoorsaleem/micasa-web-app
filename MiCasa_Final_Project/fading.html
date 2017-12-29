@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+
+<!-- Latest compiled and minified JavaScript -->
+
+<style>
+html { 
+  background: url(MiCasa_Background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.font{
+font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+font-size: 2em;
+color: black
+}
+
+.logo-center{
+position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 700px;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -350px;
+}
+
+.link{
+position: absolute;
+    top: 85%;
+    left: 50%;
+    width: 400px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -200px;
+
+}
+
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#divLogo").fadeIn(2500);
+$("#divLink").fadeIn(4000);  
+});
+
+$(document).on("click", "a", function () {
+$(document).fadeOut(1500);
+});
+</script>
+
+</head>
+
+<body>
+<div id="divLogo" style="display:none" class="logo-center" ><img src="Logo.png"></div>
+<div id="divLink" style="display:none" class="link" ><a class="font" href="#">Click Here To Get Started</a></div>
+</body>
+</html>
